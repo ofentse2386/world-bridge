@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Word Bridge | Classroom Without Walls</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f4f7fa;color:#202938}
+header{background:#17324d;color:#fff;padding:25px 18px}header h1{margin:0 0 5px}header p{margin:0}
+nav{position:sticky;top:0;z-index:10;background:#fff;padding:10px;display:flex;gap:7px;flex-wrap:wrap;box-shadow:0 2px 9px #0002}
+nav button{border:0;border-radius:8px;padding:9px 12px;font-weight:bold;cursor:pointer;background:#e5edf4;color:#17324d}nav button.active{background:#17324d;color:white}
+main{max-width:1050px;margin:22px auto;padding:0 15px}.panel{display:none;background:#fff;padding:24px;border-radius:14px;box-shadow:0 3px 14px #0001}.panel.active{display:block}
+h2{color:#17324d}.step{font-size:12px;font-weight:bold;letter-spacing:.1em;text-transform:uppercase;color:#55738e}
+.hero,.box{background:#eef5fa;border-radius:10px;padding:16px;margin:14px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.card{border:1px solid #d5e0e8;border-radius:10px;padding:14px}
+label{display:block;font-weight:bold;margin:13px 0 6px}input,select,textarea{width:100%;padding:10px;border:1px solid #bac7d1;border-radius:8px;font:inherit}textarea{min-height:105px}
+.action,.secondary{border:0;border-radius:8px;padding:11px 15px;font-weight:bold;cursor:pointer;margin:8px 5px 0 0}.action{background:#17324d;color:white}.secondary{background:#e5edf4;color:#17324d}
+.community{position:relative;height:330px;background:linear-gradient(#cfe7f7 0 55%,#d9d0b8 55%);border-radius:12px;overflow:hidden;border:2px solid #b9cfe0}
+.shop{position:absolute;left:8%;bottom:17%;width:38%;height:48%;background:#ead8b9;border:3px solid #735b45}.roof{position:absolute;top:-17%;left:0;width:100%;height:20%;background:#b55d4c;transform:skewX(-20deg)}.awning{position:absolute;left:4%;top:20%;width:92%;height:18%;background:repeating-linear-gradient(90deg,#fff 0 12%,#c77b67 12% 24%)}.door{position:absolute;right:10%;bottom:0;width:22%;height:47%;background:#8aa5b7}
+.tree{position:absolute;right:11%;bottom:17%;width:18%;height:58%}.leaves{position:absolute;top:0;width:100%;height:62%;background:#6d9b70;border-radius:50%}.trunk{position:absolute;bottom:0;left:43%;width:15%;height:55%;background:#76513a}
+.person{position:absolute;bottom:17%;width:32px;height:78px;background:#496d86;border-radius:14px 14px 4px 4px}.person:before{content:"";position:absolute;left:7px;top:-23px;width:19px;height:19px;background:#8d654f;border-radius:50%}.p1{left:58%}.p2{left:69%;background:#896b93}.p3{left:79%;background:#8a7752}
+.hotspot{position:absolute;width:38px;height:38px;border-radius:50%;border:3px solid #fff;background:#17324d;color:#fff;font-weight:bold;cursor:pointer;box-shadow:0 2px 8px #0005}.hs1{left:28%;top:48%}.hs2{left:70%;top:48%}.hs3{right:18%;top:27%}
+.feedback{margin-top:12px;padding:12px;border-left:4px solid #17324d;background:#f5f8fa;border-radius:6px}.good{background:#e1f2e5;border-left-color:#4d8a5a}.bad{background:#fae6e6;border-left-color:#b65e5e}
+.progress{height:9px;background:#e2e8ee;border-radius:9px;overflow:hidden;margin:14px 0}.progress div{height:100%;width:0;background:#17324d}
+.badge{display:inline-block;background:#e7eff5;border-radius:99px;padding:5px 9px;margin:3px;font-size:12px}
+.rubric td,.rubric th{border:1px solid #ccd7df;padding:8px;text-align:left}.rubric{border-collapse:collapse;width:100%;font-size:14px}
+.small{font-size:13px;color:#667085}
+</style>
+</head>
+<body>
+<header><h1>Word Bridge</h1><p>A classroom without walls for Grade 6 EFAL learners</p><p class="small" style="color:#d9e7f2;margin-top:8px">ENIP 322 · Assignment 3 · Part B Functional Demonstration</p></header>
+<nav>
+<button class="tab active" onclick="tab('start',this)">Start</button><button class="tab" onclick="tab('guide',this)">Teacher Guide</button><button class="tab" onclick="tab('look',this)">1 Look</button><button class="tab" onclick="tab('talk',this)">2 Talk</button><button class="tab" onclick="tab('make',this)">3 Make</button><button class="tab" onclick="tab('analyse',this)">4 Analyse</button><button class="tab" onclick="tab('read',this)">5 Read</button><button class="tab" onclick="tab('share',this)">6 Share</button><button class="tab" onclick="tab('assess',this)">Assessment</button>
+</nav>
+<main>
+
+<section id="start" class="panel active"><span class="step">Welcome</span><h2>Build a bridge from the language you know to English</h2>
+<div class="hero"><p><strong>Real-world task:</strong> Explore a community scene, discuss its meaning, collect vocabulary, create a bilingual caption, analyse visual choices, and share your story with a peer.</p><hr style="border:0;border-top:1px solid #d5e0e8;margin:16px 0"><p><strong>Learning objectives:</strong> By the end of the activity, learners should be able to use relevant English vocabulary and structures, communicate ideas through speaking and writing, interpret colour/size/position in an image, collaborate with peers, and explain how a home language supported English learning.</p>
+<span class="badge">Listening & Speaking</span><span class="badge">Reading & Viewing</span><span class="badge">Writing & Presenting</span><span class="badge">Vocabulary & Structures</span></div>
+<div class="grid"><div class="card"><b>Work together</b><p>You may work with a partner and use your home language, English, or both.</p></div><div class="card"><b>Be a contributor</b><p>You bring knowledge about your community and teach others words and meanings.</p></div><div class="card"><b>Create for an audience</b><p>Your final story is shared with a peer who gives feedback.</p></div></div>
+<label>Choose a language to support your learning</label><select id="lang"><option>Sesotho</option><option>isiZulu</option><option>isiXhosa</option><option>English</option></select>
+<button class="action" onclick="tab('look',document.querySelectorAll('.tab')[2])">Start Word Bridge →</button></section>
+
+<section id="guide" class="panel"><span class="step">Teacher Guide · Part B</span><h2>How to use Word Bridge in a Grade 6 EFAL classroom</h2>
+<div class="hero"><p><strong>Purpose:</strong> Word Bridge responds to the linguistic wall created when English is treated as the only accepted language for thinking, speaking and writing. Learners use their home languages as resources for meaning-making and then develop English output.</p></div>
+<div class="grid">
+<div class="card"><b>Target learners</b><p>Grade 6 EFAL learners in a multilingual South African classroom.</p></div>
+<div class="card"><b>Learning goals</b><p>Learners develop English vocabulary and structures, communicate through speaking and writing, interpret visual features, collaborate and reflect on their language resources.</p></div>
+<div class="card"><b>Teacher role</b><p>Facilitate, model, question, support and assess. The teacher is not the only source of language knowledge.</p></div>
+<div class="card"><b>Learner agency</b><p>Learners choose community content, contribute language knowledge and select how they present their story.</p></div>
+</div>
+<h3>The learning journey</h3>
+<div class="grid">
+<div class="card"><b>1 · Look</b><p>Click hotspots and connect English vocabulary to a familiar home-language word.</p></div>
+<div class="card"><b>2 · Talk</b><p>Discuss the picture in any language, then agree on useful English words.</p></div>
+<div class="card"><b>3 · Make</b><p>Create a home-language caption first, then an English caption, with optional audio/photo.</p></div>
+<div class="card"><b>4 · Read the image</b><p>Interpret colour, size and position and explain how visual choices communicate meaning.</p></div>
+<div class="card"><b>5 · Share</b><p>Exchange stories, give one kind comment and one question, then reflect.</p></div>
+</div>
+<h3>EFAL skills covered</h3><div class="box"><span class="badge">Listening & Speaking</span><span class="badge">Reading & Viewing</span><span class="badge">Writing & Presenting</span><span class="badge">Vocabulary & Structures</span><p class="small">The five stages deliberately connect language input, interaction and output to these EFAL areas.</p></div>
+<h3>The thinking behind Word Bridge</h3>
+<div class="grid">
+<div class="card"><b>Translanguaging</b><p>Learners use their full linguistic resources to understand and show what they know.</p><p class="small">Garcia, Johnson & Seltzer (2017); Wei (2018)</p></div>
+<div class="card"><b>Interdependence & identity</b><p>Home-language knowledge can support English learning, while identity is recognised as part of learning.</p><p class="small">Cummins (2021)</p></div>
+<div class="card"><b>Visual literacy</b><p>Learners interpret visual choices such as colour, size and position as part of meaning.</p><p class="small">Kress & van Leeuwen (2021)</p></div>
+<div class="card"><b>Multimedia learning</b><p>Words, pictures and sound are combined to support understanding.</p><p class="small">Mayer (2021)</p></div>
+</div>
+<h3>Learner roles</h3><div class="box"><span class="badge">Photographer / content collector</span><span class="badge">Language keeper</span><span class="badge">Writer / editor</span><span class="badge">Presenter</span><p>Learners can work in pairs or groups. Stronger English speakers are not positioned as the teachers; each learner contributes expertise from their own linguistic and community knowledge.</p></div>
+<h3>South African classroom context and inclusion</h3><ul><li>Learners' communities are used as meaningful content.</li><li>Home languages are treated as learning resources rather than barriers.</li><li>Parents and elders can contribute community words or explanations where appropriate.</li><li>The artefact can be used on phones, tablets or computers, including shared devices.</li><li>The single HTML file can be saved and opened locally, reducing dependence on continuous internet access.</li><li>Audio recording is optional; learners can use the text submission when microphone access is unavailable.</li></ul>
+<h3>Teacher demonstration checklist</h3><ol><li>Open <b>Start</b> and explain the linguistic wall and purpose.</li><li>Open <b>Look</b> and click all three hotspots.</li><li>Use <b>Talk</b> to show home-language vocabulary leading to English vocabulary.</li><li>Use <b>Make</b> to enter a bilingual caption and demonstrate audio/text submission.</li><li>Use <b>Analyse</b> to demonstrate visual literacy.</li><li>Use <b>Read</b> to show immediate quiz feedback.</li><li>Use <b>Share</b> to demonstrate peer feedback and reflection.</li><li>Open <b>Assessment</b> to show how evidence of learning is collected.</li></ol>
+<div class="box"><b>Live showcase tip:</b> Invite the audience to complete only the Look, Make and Read activities on their phones if time is limited. The complete learner journey remains available in the artefact.</div>
+</section>
+
+<section id="look" class="panel"><span class="step">Step 1 · Look</span><h2>Explore the community picture</h2><p>Click each hotspot. Hear the English word and connect it to a word you already know. The aim is not to replace the home language with English, but to use familiar language as a bridge to English.</p>
+<div class="community"><div class="shop"><div class="roof"></div><div class="awning"></div><div class="door"></div></div><div class="tree"><div class="leaves"></div><div class="trunk"></div></div><div class="person p1"></div><div class="person p2"></div><div class="person p3"></div>
+<button class="hotspot hs1" onclick="hot('shop')">1</button><button class="hotspot hs2" onclick="hot('people')">2</button><button class="hotspot hs3" onclick="hot('tree')">3</button></div>
+<div id="hotout" class="feedback">Start by clicking hotspot 1, 2 or 3.</div>
+<button class="action" onclick="tab('talk',document.querySelectorAll('.tab')[3])">Continue →</button></section>
+
+<section id="talk" class="panel"><span class="step">Step 2 · Talk</span><h2>Talk about what you see</h2><p>Use any language to build meaning. Then agree on English words with your partner.</p>
+<div class="grid"><div class="card"><b>Prompt A</b><p>What is happening in this community?</p></div><div class="card"><b>Prompt B</b><p>Which people, places, objects or actions can you name?</p></div><div class="card"><b>Prompt C</b><p>How is this similar to or different from your community?</p></div></div>
+<label>Shared vocabulary: home language</label><textarea id="vhome" placeholder="List words you and your partner know."></textarea>
+<label>Shared vocabulary: English</label><textarea id="veng" placeholder="Write the English words you agreed on."></textarea>
+<button class="action" onclick="speak('Talk with your partner. You may use your home language, English, or both.')">🔊 Hear instruction</button>
+<button class="action" onclick="tab('make',document.querySelectorAll('.tab')[4])">Continue →</button></section>
+
+<section id="make" class="panel"><span class="step">Step 3 · Make</span><h2>Create a bilingual multimodal story</h2><p>Meaning first, English second. You can use the sample community image or upload a photo from your own community if your teacher permits it.</p>
+<label>Home-language caption</label><textarea id="hc" placeholder="Write the message you want your audience to understand."></textarea>
+<label>English caption</label><textarea id="ec" placeholder="Express the same message in English."></textarea>
+<label>Optional community photo</label><input id="photo" type="file" accept="image/*">
+<div id="preview"></div>
+<label>Voice recording / simulated submission</label><p class="small">For the live demonstration, record a short English sentence. If browser recording is unavailable, type the sentence below as the simulated voice submission.</p>
+<button class="action" onclick="record()">● Start recording</button><button class="secondary" onclick="stopRecord()">■ Stop</button>
+<div id="recStatus" class="feedback">No recording yet.</div>
+<textarea id="voiceText" placeholder="Simulated voice submission: type what you would say aloud, e.g. 'The people are meeting near the shop.'"></textarea>
+<button class="action" onclick="saveStory()">Save / submit my story</button><div id="save" class="feedback"></div>
+<button class="action" onclick="tab('analyse',document.querySelectorAll('.tab')[5])">Continue →</button></section>
+
+<section id="analyse" class="panel"><span class="step">Step 4 · Analyse</span><h2>Analyse the meaning</h2><p>Look closely at the visual choices. Explain how the image communicates meaning.</p>
+<div class="grid"><div class="card"><b>Colour</b><p>Choose one colour you notice and explain what it helps you notice.</p></div><div class="card"><b>Position</b><p>What is placed on the left, right, centre, top or bottom? Why might that matter?</p></div><div class="card"><b>Size</b><p>Which element attracts attention because of its size?</p></div></div>
+<label>Your analysis</label><textarea id="analysis" placeholder="The image shows... This may suggest... because..."></textarea>
+<label>Example of an expected learner response</label>
+<div class="box">“The shop is on the left and the people are near it. This makes the shop an important part of the community scene. The people show that the place is used by the community.”</div>
+<button class="action" onclick="tab('read',document.querySelectorAll('.tab')[6])">Continue →</button></section>
+
+<section id="read" class="panel"><span class="step">Step 5 · Read & respond</span><h2>Check your understanding</h2>
+<div id="q1"><p><b>1.</b> Where is the shop positioned?</p><button class="secondary" onclick="quiz(this,false)">In the sky</button><button class="secondary" onclick="quiz(this,true)">On the left side</button><button class="secondary" onclick="quiz(this,false)">Behind the tree</button></div>
+<div id="q2"><p><b>2.</b> Which combination can create meaning in a digital story?</p><button class="secondary" onclick="quiz(this,true)">Words + pictures + sound</button><button class="secondary" onclick="quiz(this,false)">Words only</button><button class="secondary" onclick="quiz(this,false)">Pictures without interpretation</button></div>
+<div id="q3"><p><b>3.</b> Why do we begin with a home language?</p><button class="secondary" onclick="quiz(this,true)">It helps learners use existing knowledge to build meaning before producing English.</button><button class="secondary" onclick="quiz(this,false)">Because English is not needed.</button><button class="secondary" onclick="quiz(this,false)">Because only home-language work is assessed.</button></div>
+<div id="qfeedback" class="feedback">Choose an answer.</div>
+<button class="action" onclick="tab('share',document.querySelectorAll('.tab')[7])">Continue →</button></section>
+
+<section id="share" class="panel"><span class="step">Step 6 · Share</span><h2>Peer feedback and reflection</h2><p>Exchange stories. Your partner must give one kind comment and one useful question.</p>
+<label>My partner's kind comment</label><textarea id="pc"></textarea><label>My partner's question</label><textarea id="pq"></textarea>
+<label>My response</label><textarea id="pr"></textarea><label>Reflection</label><textarea id="ref" placeholder="How did your home language help you understand, communicate or learn English?"></textarea>
+<button class="action" onclick="finish()">Submit reflection</button><div id="finish" class="feedback"></div>
+<button class="action" onclick="tab('assess',document.querySelectorAll('.tab')[8])">View assessment →</button></section>
+
+<section id="assess" class="panel"><span class="step">Assessment</span><h2>Word Bridge learner assessment</h2>
+<p>This classroom rubric assesses the actual learning product, not the learner's home language proficiency.</p>
+<table class="rubric"><tr><th>Criteria</th><th>4 Excellent</th><th>3 Good</th><th>2 Developing</th><th>1 Beginning</th></tr>
+<tr><td>English language</td><td>Clear vocabulary, structures and meaning.</td><td>Mostly clear with minor errors.</td><td>Meaning is partly clear.</td><td>Meaning is difficult to understand.</td></tr>
+<tr><td>Multimodal communication</td><td>Words, image and/or audio work together purposefully.</td><td>Uses more than one mode appropriately.</td><td>Uses modes but links are limited.</td><td>Little evidence of multimodal meaning.</td></tr>
+<tr><td>Visual analysis</td><td>Explains colour, position/size with reasons.</td><td>Identifies and explains visual choices.</td><td>Identifies choices with limited explanation.</td><td>Provides little visual analysis.</td></tr>
+<tr><td>Collaboration & agency</td><td>Contributes knowledge, supports peer and makes meaningful choices.</td><td>Participates and contributes.</td><td>Participates with support.</td><td>Limited participation.</td></tr>
+<tr><td>Reflection</td><td>Clearly explains how language resources supported learning.</td><td>Explains the connection adequately.</td><td>Gives a simple explanation.</td><td>Reflection is incomplete.</td></tr></table>
+<div class="box"><b>Teacher evidence:</b> home-language planning, English caption, visual analysis, voice/text submission, peer feedback and reflection.</div>
+<div class="box"><b>Suggested evidence weighting for this demonstration:</b><br>English language use – 25% · Multimodal communication – 20% · Visual analysis – 20% · Collaboration & agency – 20% · Reflection – 15%.</div>
+<h3>References used in Part A</h3><p class="small">Cummins, J. (2021). <i>Rethinking the education of multilingual learners: a critical analysis of theoretical concepts</i>. Bristol: Multilingual Matters.<br>Garcia, O., Johnson, S.I. & Seltzer, K. (2017). <i>The translanguaging classroom: leveraging student bilingualism for learning</i>. Philadelphia: Caslon.<br>Kress, G. & van Leeuwen, T. (2021). <i>Reading images: the grammar of visual design</i>. 3rd edn. London: Routledge.<br>Mayer, R.E. (2021). <i>Multimedia learning</i>. 3rd edn. Cambridge: Cambridge University Press.<br>Wei, L. (2018). 'Translanguaging as a practical theory of language', <i>Applied Linguistics, 39</i>(1), 9–30.</p>
+</section>
+</main>
+<footer style="max-width:1050px;margin:0 auto 28px;padding:0 15px;color:#667085;font-size:13px;text-align:center">Word Bridge · ENIP 322 Assignment 3 · Part B Functional Demonstration · Designed for Grade 6 EFAL multilingual learning</footer>
+<script>
+const words={shop:{en:"shop",Sesotho:"lebenkele",isiZulu:"isitolo",isiXhosa:"ivenkile",p:"What can people do here?"},people:{en:"people",Sesotho:"batho",isiZulu:"abantu",isiXhosa:"abantu",p:"Who is part of this community?"},tree:{en:"tree",Sesotho:"sefate",isiZulu:"isihlahla",isiXhosa:"umthi",p:"How can nature be part of a community?"}};
+function tab(id,b){document.querySelectorAll('.panel').forEach(x=>x.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));if(b)b.classList.add('active');scrollTo(0,0)}
+function hot(k){let w=words[k],l=document.getElementById('lang')?.value||'Sesotho';document.getElementById('hotout').innerHTML='<b>English:</b> '+w.en+'<br><b>'+l+':</b> '+(w[l]||w.Sesotho)+'<br>'+w.p;speak(w.en)}
+function speak(t){if('speechSynthesis'in window){speechSynthesis.cancel();let u=new SpeechSynthesisUtterance(t);u.lang='en-ZA';speechSynthesis.speak(u)}}
+let mediaRecorder,chunks=[];
+async function record(){if(!navigator.mediaDevices?.getUserMedia){document.getElementById('recStatus').innerHTML='Browser recording is unavailable. Use the simulated submission box below.';return}try{let s=await navigator.mediaDevices.getUserMedia({audio:true});chunks=[];mediaRecorder=new MediaRecorder(s);mediaRecorder.ondataavailable=e=>chunks.push(e.data);mediaRecorder.onstop=()=>{let blob=new Blob(chunks,{type:'audio/webm'}),url=URL.createObjectURL(blob);document.getElementById('recStatus').innerHTML='<b>Recording ready.</b> <audio controls src="'+url+'"></audio>';s.getTracks().forEach(t=>t.stop())};mediaRecorder.start();document.getElementById('recStatus').textContent='Recording...'}catch(e){document.getElementById('recStatus').textContent='Microphone permission was not available. Use the simulated submission.'}}
+function stopRecord(){if(mediaRecorder&&mediaRecorder.state!=='inactive')mediaRecorder.stop()}
+function saveStory(){let h=document.getElementById('hc').value.trim(),e=document.getElementById('ec').value.trim(),v=document.getElementById('voiceText').value.trim();document.getElementById('save').innerHTML=(h&&e&&(v||chunks.length))?'<b>Submission captured for the demonstration.</b> The learner has produced home-language meaning, English output and an oral/written multimodal contribution.':'Complete the home-language caption, English caption and voice/text submission first.'}
+function quiz(b,ok){document.getElementById('qfeedback').className='feedback '+(ok?'good':'bad');document.getElementById('qfeedback').textContent=ok?'Correct. Explain your answer to your partner.':'Not quite. Re-read the question and try another answer.'}
+function finish(){let r=document.getElementById('ref').value.trim();document.getElementById('finish').innerHTML=r?'<b>Reflection submitted.</b> You have completed the learner journey.':'Please complete your reflection.'}
+document.getElementById('photo').addEventListener('change',e=>{let f=e.target.files[0];if(f){let u=URL.createObjectURL(f);document.getElementById('preview').innerHTML='<p><b>Photo preview:</b></p><img src="'+u+'" style="max-width:100%;max-height:230px;border-radius:9px">'}})
+</script>
+</body></html>
